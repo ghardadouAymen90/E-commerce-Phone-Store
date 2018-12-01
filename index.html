@@ -1,0 +1,177 @@
+<!DOCTYPE HTML>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Phones shopping</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="Shopping-Cart.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+        crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Sriracha" rel="stylesheet">
+</head>
+
+<body>
+    <!--Head section-->
+    <div class="header-section p-2 fixed-top">
+        <span class="brand text-white">Your Online Shop for smartPhones!</span>
+        <div class="d-flex"> Total Purchases:<div class="total-cart text-white  mx-5">0</div>$
+        </div>
+        <div class="d-flex align-items-center"> <input class="searched" type="text" placeholder="Search for model.."
+                name="search">
+            <img src="images/search.png" alt="search" class="cart-image" onclick="searching()">
+        </div>
+
+    </div>
+    <main>
+        <div class="container-fluid phones">
+            <div class="overlay container-fluid">
+                <h1 class="title text-center text-white py-2">Choose your products</h1>
+
+
+                <div class="row d-flex  container-fluid mx-auto">
+                    <div class="product col-lg-3 col-12">
+                        <i class="far fa-trash-alt text-danger"></i>
+                        <img id="prdt" src="phones/1-samsung-galaxy-s9.png" alt="samsung-galaxy-s9">
+                        <div class="overlay-phone ml-auto">
+                            <div class="text-img">samsung galaxy s9</div>
+                            <div class="price" value="900">900$</div>
+                            <div class="counter">
+                                <button class="minus">-</button>
+                                <div class="quantity-per-article text-white">0</div>
+                                <button class="plus">+</button>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class="product col-lg-3 col-12">
+                        <i class="far fa-trash-alt text-danger"></i>
+                        <img id="prdt" src="phones/2-Huawei P20 Pro.png" alt="2-Huawei P20 Pro">
+                        <div class="overlay-phone ml-auto">
+                            <div class="text-img">Huawei P20 Pro</div>
+                            <div class="price" value="800">800$</div>
+                            <div class="counter">
+                                <button class="minus">-</button>
+                                <div class="quantity-per-article text-white">0</div>
+                                <button class="plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product col-lg-3 col-12">
+                        <i class="far fa-trash-alt text-danger"></i>
+                        <img id="prdt" src="phones/3-LG_V40_ThinQ_Black.png" alt="3-LG_V40_ThinQ_Black">
+                        <div class="overlay-phone ml-auto">
+                            <div class="text-img">LG V40 ThinQ Black</div>
+                            <div class="price" value="800">800$</div>
+                            <div class="counter">
+                                <button class="minus">-</button>
+                                <div class="quantity-per-article text-white">0</div>
+                                <button class="plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product col-lg-3 col-12">
+                        <i class="far fa-trash-alt text-danger"></i>
+                        <img id="prdt" src="phones/4-Apple Iphone X.png" alt="4-Apple Iphone X">
+                        <div class="overlay-phone ml-auto">
+                            <div class="text-img">Apple Iphone X</div>
+                            <div class="price" value="1000">1000$</div>
+                            <div class="counter">
+                                <button class="minus">-</button>
+                                <div class="quantity-per-article text-white">0</div>
+                                <button class="plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="product col-lg-3 col-12">
+                        <i class="far fa-trash-alt text-danger"></i>
+                        <img id="prdt" src="phones/5-google pixel 3 xl.jpg" alt="5-google pixel 3 xl">
+                        <div class="overlay-phone ml-auto">
+                            <div class="text-img">Google pixel 3 xl</div>
+                            <div class="price" value="800">800$</div>
+                            <div class="counter">
+                                <button class="minus">-</button>
+                                <div class="quantity-per-article text-white">0</div>
+                                <button class="plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product col-lg-3 col-12">
+                        <i class="far fa-trash-alt text-danger"></i>
+                        <img id="prdt" src="phones/6-motorola-moto-z3-exclusive-black.png" alt="motorola-moto-z3">
+                        <div class="overlay-phone ml-auto">
+                            <div class="text-img">motorola moto z3</div>
+                            <div class="price" value="700">700$</div>
+                            <div class="counter">
+                                <button class="minus">-</button>
+                                <div class="quantity-per-article text-white">0</div>
+                                <button class="plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product col-lg-3 col-12">
+                        <i class="far fa-trash-alt text-danger"></i>
+                        <img id="prdt" src="phones/7-OnePlus 6T.jpg" alt="7-OnePlus 6T">
+                        <div class="overlay-phone ml-auto">
+                            <div class="text-img">OnePlus 6T</div>
+                            <div class="price" value="800">800$</div>
+                            <div class="counter">
+                                <button class="minus">-</button>
+                                <div class="quantity-per-article text-white">0</div>
+                                <button class="plus">+</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="product add col-lg-3 col-12">
+                        <img src="images/plus.png" class="btnadd" alt="plus.png">
+                        <div class="overlay-phone ml-auto">
+                            <div class="text-img">Add Phone to your cart</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Modal add article -->
+
+            <div class="modal " tabindex="-1" role="dialog" id="mdl">
+                <div class="modal-dialog" role="document"></div>
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Add a shopping item</h5>
+                        <button type="button" class="close" onclick="CloseAddingWindow()" data-dismiss="modal"
+                            aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body d-flex flex-column">
+                        Link product's image<input class="add-src" type="text"></input>
+                        Phone model<input class="add-phone-model" type="text"></input>
+                        Price<input class="add-price" type="text"></input>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-primary" onclick="addArticle()"> Add</button>
+                        <button type="button" class="btn btn-secondary" onclick="CloseAddingWindow()" data-dismiss="modal">Dismiss</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </main>
+</body>
+<script src="Shopping.js"></script>
+<!--Appel Js-->
+</script>
+
+</html>
