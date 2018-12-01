@@ -1,2 +1,2 @@
 # E-commerce-Phone-Store
-E-commerce-Phone-Store/settings
+E-commerce-Phone-Store
